@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0A203A27245215F800E8F6B0 /* Shout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A203A1D245215F800E8F6B0 /* Shout.framework */; };
+		0A203A27245215F800E8F6B0 /* Shout_iOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A203A1D245215F800E8F6B0 /* Shout_iOS.framework */; };
 		0A203A2E245215F800E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A203A3A2452176F00E8F6B0 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A372452176F00E8F6B0 /* XCTestManifests.swift */; };
 		0A203A3B2452176F00E8F6B0 /* SSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A382452176F00E8F6B0 /* SSHTests.swift */; };
@@ -24,6 +24,19 @@
 		0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
 		0A203A522452179E00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
 		0A203A5624521A6100E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203A5524521A6100E8F6B0 /* Socket */; };
+		0A203AE524521FCB00E8F6B0 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A432452179E00E8F6B0 /* Agent.swift */; };
+		0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
+		0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
+		0A203AE824521FCB00E8F6B0 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
+		0A203AE924521FCB00E8F6B0 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3E2452179E00E8F6B0 /* FileType.swift */; };
+		0A203AEA24521FCB00E8F6B0 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A402452179E00E8F6B0 /* ReadWrite.swift */; };
+		0A203AEB24521FCB00E8F6B0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A412452179E00E8F6B0 /* Session.swift */; };
+		0A203AEC24521FCB00E8F6B0 /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A442452179E00E8F6B0 /* SFTP.swift */; };
+		0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A422452179E00E8F6B0 /* SSH.swift */; };
+		0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
+		0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
+		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; };
+		0A203AF52452212B00E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203AF42452212B00E8F6B0 /* Socket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,10 +47,24 @@
 			remoteGlobalIDString = 0A203A1C245215F800E8F6B0;
 			remoteInfo = Shout;
 		};
+		0A203AD624521D9700E8F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A203A14245215F800E8F6B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A203AD224521CBC00E8F6B0;
+			remoteInfo = libssh2;
+		};
+		0A203AF124521FF500E8F6B0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A203A14245215F800E8F6B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A203AD224521CBC00E8F6B0;
+			remoteInfo = libssh2;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		0A203A1D245215F800E8F6B0 /* Shout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A203A1D245215F800E8F6B0 /* Shout_iOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shout_iOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		0A203A20245215F800E8F6B0 /* Shout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shout.h; sourceTree = "<group>"; };
 		0A203A21245215F800E8F6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A203A26245215F800E8F6B0 /* ShoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -56,6 +83,7 @@
 		0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHAuthMethod.swift; sourceTree = "<group>"; };
 		0A203A462452179E00E8F6B0 /* FileAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAttributes.swift; sourceTree = "<group>"; };
 		0A203A472452179E00E8F6B0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
+		0A203ADD24521F6E00E8F6B0 /* Shout_macOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shout_macOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -71,7 +99,15 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A203A27245215F800E8F6B0 /* Shout.framework in Frameworks */,
+				0A203A27245215F800E8F6B0 /* Shout_iOS.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A203ADA24521F6E00E8F6B0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A203AF52452212B00E8F6B0 /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -84,14 +120,16 @@
 				0A203A1F245215F800E8F6B0 /* Shout */,
 				0A203A2A245215F800E8F6B0 /* ShoutTests */,
 				0A203A1E245215F800E8F6B0 /* Products */,
+				0A203AF32452212B00E8F6B0 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
 		0A203A1E245215F800E8F6B0 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				0A203A1D245215F800E8F6B0 /* Shout.framework */,
+				0A203A1D245215F800E8F6B0 /* Shout_iOS.framework */,
 				0A203A26245215F800E8F6B0 /* ShoutTests.xctest */,
+				0A203ADD24521F6E00E8F6B0 /* Shout_macOS.framework */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -127,6 +165,13 @@
 			path = ShoutTests;
 			sourceTree = "<group>";
 		};
+		0A203AF32452212B00E8F6B0 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -135,6 +180,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A203A2E245215F800E8F6B0 /* Shout.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A203AD824521F6E00E8F6B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -158,9 +211,9 @@
 /* End PBXLegacyTarget section */
 
 /* Begin PBXNativeTarget section */
-		0A203A1C245215F800E8F6B0 /* Shout */ = {
+		0A203A1C245215F800E8F6B0 /* Shout-iOS */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 0A203A31245215F800E8F6B0 /* Build configuration list for PBXNativeTarget "Shout" */;
+			buildConfigurationList = 0A203A31245215F800E8F6B0 /* Build configuration list for PBXNativeTarget "Shout-iOS" */;
 			buildPhases = (
 				0A203A18245215F800E8F6B0 /* Headers */,
 				0A203A19245215F800E8F6B0 /* Sources */,
@@ -170,13 +223,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				0A203AD724521D9700E8F6B0 /* PBXTargetDependency */,
 			);
-			name = Shout;
+			name = "Shout-iOS";
 			packageProductDependencies = (
 				0A203A5524521A6100E8F6B0 /* Socket */,
 			);
 			productName = Shout;
-			productReference = 0A203A1D245215F800E8F6B0 /* Shout.framework */;
+			productReference = 0A203A1D245215F800E8F6B0 /* Shout_iOS.framework */;
 			productType = "com.apple.product-type.framework";
 		};
 		0A203A25245215F800E8F6B0 /* ShoutTests */ = {
@@ -196,6 +250,28 @@
 			productName = ShoutTests;
 			productReference = 0A203A26245215F800E8F6B0 /* ShoutTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		0A203ADC24521F6E00E8F6B0 /* Shout-macOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A203AE224521F6E00E8F6B0 /* Build configuration list for PBXNativeTarget "Shout-macOS" */;
+			buildPhases = (
+				0A203AD824521F6E00E8F6B0 /* Headers */,
+				0A203AD924521F6E00E8F6B0 /* Sources */,
+				0A203ADA24521F6E00E8F6B0 /* Frameworks */,
+				0A203ADB24521F6E00E8F6B0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A203AF224521FF500E8F6B0 /* PBXTargetDependency */,
+			);
+			name = "Shout-macOS";
+			packageProductDependencies = (
+				0A203AF42452212B00E8F6B0 /* Socket */,
+			);
+			productName = "Shout-macOS";
+			productReference = 0A203ADD24521F6E00E8F6B0 /* Shout_macOS.framework */;
+			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
 
@@ -218,10 +294,13 @@
 					0A203AD224521CBC00E8F6B0 = {
 						CreatedOnToolsVersion = 11.4.1;
 					};
+					0A203ADC24521F6E00E8F6B0 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 0A203A17245215F800E8F6B0 /* Build configuration list for PBXProject "Shout" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 10.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -236,7 +315,8 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				0A203A1C245215F800E8F6B0 /* Shout */,
+				0A203A1C245215F800E8F6B0 /* Shout-iOS */,
+				0A203ADC24521F6E00E8F6B0 /* Shout-macOS */,
 				0A203A25245215F800E8F6B0 /* ShoutTests */,
 				0A203AD224521CBC00E8F6B0 /* libssh2 */,
 			);
@@ -252,6 +332,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		0A203A24245215F800E8F6B0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A203ADB24521F6E00E8F6B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -289,13 +376,41 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		0A203AD924521F6E00E8F6B0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A203AEB24521FCB00E8F6B0 /* Session.swift in Sources */,
+				0A203AE824521FCB00E8F6B0 /* FilePermissions.swift in Sources */,
+				0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */,
+				0A203AEC24521FCB00E8F6B0 /* SFTP.swift in Sources */,
+				0A203AE524521FCB00E8F6B0 /* Agent.swift in Sources */,
+				0A203AE924521FCB00E8F6B0 /* FileType.swift in Sources */,
+				0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */,
+				0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */,
+				0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */,
+				0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */,
+				0A203AEA24521FCB00E8F6B0 /* ReadWrite.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
 		0A203A29245215F800E8F6B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 0A203A1C245215F800E8F6B0 /* Shout */;
+			target = 0A203A1C245215F800E8F6B0 /* Shout-iOS */;
 			targetProxy = 0A203A28245215F800E8F6B0 /* PBXContainerItemProxy */;
+		};
+		0A203AD724521D9700E8F6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A203AD224521CBC00E8F6B0 /* libssh2 */;
+			targetProxy = 0A203AD624521D9700E8F6B0 /* PBXContainerItemProxy */;
+		};
+		0A203AF224521FF500E8F6B0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A203AD224521CBC00E8F6B0 /* libssh2 */;
+			targetProxy = 0A203AF124521FF500E8F6B0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -351,11 +466,13 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
 				MTL_FAST_MATH = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -408,10 +525,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 13.4;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
@@ -437,11 +556,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ioshack.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -465,11 +587,14 @@
 					"@executable_path/Frameworks",
 					"@loader_path/Frameworks",
 				);
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2/lib";
 				PRODUCT_BUNDLE_IDENTIFIER = in.ioshack.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -543,6 +668,62 @@
 			};
 			name = Release;
 		};
+		0A203AE324521F6E00E8F6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Shout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "in.ioshack.Shout-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		0A203AE424521F6E00E8F6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				INFOPLIST_FILE = Shout/Info.plist;
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/Frameworks",
+				);
+				LIBRARY_SEARCH_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2/lib";
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "in.ioshack.Shout-macOS";
+				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				SDKROOT = macosx;
+				SKIP_INSTALL = YES;
+				SUPPORTED_PLATFORMS = macosx;
+				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -555,7 +736,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		0A203A31245215F800E8F6B0 /* Build configuration list for PBXNativeTarget "Shout" */ = {
+		0A203A31245215F800E8F6B0 /* Build configuration list for PBXNativeTarget "Shout-iOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				0A203A32245215F800E8F6B0 /* Debug */,
@@ -582,6 +763,15 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
+		0A203AE224521F6E00E8F6B0 /* Build configuration list for PBXNativeTarget "Shout-macOS" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A203AE324521F6E00E8F6B0 /* Debug */,
+				0A203AE424521F6E00E8F6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
@@ -597,6 +787,11 @@
 
 /* Begin XCSwiftPackageProductDependency section */
 		0A203A5524521A6100E8F6B0 /* Socket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			productName = Socket;
+		};
+		0A203AF42452212B00E8F6B0 /* Socket */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = 0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
