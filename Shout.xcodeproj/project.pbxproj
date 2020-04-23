@@ -140,6 +140,23 @@
 		};
 /* End PBXHeadersBuildPhase section */
 
+/* Begin PBXLegacyTarget section */
+		0A203AD224521CBC00E8F6B0 /* libssh2 */ = {
+			isa = PBXLegacyTarget;
+			buildArgumentsString = "iSSH2.sh --libssh2=1.9.0";
+			buildConfigurationList = 0A203AD324521CBC00E8F6B0 /* Build configuration list for PBXLegacyTarget "libssh2" */;
+			buildPhases = (
+			);
+			buildToolPath = /bin/bash;
+			buildWorkingDirectory = $SRCROOT/libssh2;
+			dependencies = (
+			);
+			name = libssh2;
+			passBuildSettingsInEnvironment = 1;
+			productName = libssh2;
+		};
+/* End PBXLegacyTarget section */
+
 /* Begin PBXNativeTarget section */
 		0A203A1C245215F800E8F6B0 /* Shout */ = {
 			isa = PBXNativeTarget;
@@ -198,6 +215,9 @@
 						CreatedOnToolsVersion = 11.4.1;
 						LastSwiftMigration = 1140;
 					};
+					0A203AD224521CBC00E8F6B0 = {
+						CreatedOnToolsVersion = 11.4.1;
+					};
 				};
 			};
 			buildConfigurationList = 0A203A17245215F800E8F6B0 /* Build configuration list for PBXProject "Shout" */;
@@ -218,6 +238,7 @@
 			targets = (
 				0A203A1C245215F800E8F6B0 /* Shout */,
 				0A203A25245215F800E8F6B0 /* ShoutTests */,
+				0A203AD224521CBC00E8F6B0 /* libssh2 */,
 			);
 		};
 /* End PBXProject section */
@@ -495,6 +516,33 @@
 			};
 			name = Release;
 		};
+		0A203AD424521CBC00E8F6B0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUGGING_SYMBOLS = YES;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		0A203AD524521CBC00E8F6B0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
+				OTHER_CFLAGS = "";
+				OTHER_LDFLAGS = "";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -521,6 +569,15 @@
 			buildConfigurations = (
 				0A203A35245215F800E8F6B0 /* Debug */,
 				0A203A36245215F800E8F6B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A203AD324521CBC00E8F6B0 /* Build configuration list for PBXLegacyTarget "libssh2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A203AD424521CBC00E8F6B0 /* Debug */,
+				0A203AD524521CBC00E8F6B0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

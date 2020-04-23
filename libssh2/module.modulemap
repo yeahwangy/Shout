@@ -1,0 +1,11 @@
+module CSSH {
+    header "include/libssh2.h"
+    header "include/libssh2_sftp.h"
+    header "include/libssh2_publickey.h"
+
+    link "ssl"
+    link "crypto"
+    link "ssh2"
+
+    export *
+}
