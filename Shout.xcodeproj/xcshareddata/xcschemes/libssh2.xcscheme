@@ -14,9 +14,9 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "0A203ADC24521F6E00E8F6B0"
-               BuildableName = "Shout.framework"
-               BlueprintName = "Shout-macOS"
+               BlueprintIdentifier = "0A203AD224521CBC00E8F6B0"
+               BuildableName = "libssh2"
+               BlueprintName = "libssh2"
                ReferencedContainer = "container:Shout.xcodeproj">
             </BuildableReference>
          </BuildActionEntry>
@@ -50,9 +50,9 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "0A203ADC24521F6E00E8F6B0"
-            BuildableName = "Shout.framework"
-            BlueprintName = "Shout-macOS"
+            BlueprintIdentifier = "0A203AD224521CBC00E8F6B0"
+            BuildableName = "libssh2"
+            BlueprintName = "libssh2"
             ReferencedContainer = "container:Shout.xcodeproj">
          </BuildableReference>
       </MacroExpansion>

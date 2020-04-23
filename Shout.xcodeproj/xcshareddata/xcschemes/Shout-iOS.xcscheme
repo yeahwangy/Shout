@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "0A203A1C245215F800E8F6B0"
-               BuildableName = "Shout_iOS.framework"
+               BuildableName = "Shout.framework"
                BlueprintName = "Shout-iOS"
                ReferencedContainer = "container:Shout.xcodeproj">
             </BuildableReference>
@@ -61,7 +61,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "0A203A1C245215F800E8F6B0"
-            BuildableName = "Shout_iOS.framework"
+            BuildableName = "Shout.framework"
             BlueprintName = "Shout-iOS"
             ReferencedContainer = "container:Shout.xcodeproj">
          </BuildableReference>
