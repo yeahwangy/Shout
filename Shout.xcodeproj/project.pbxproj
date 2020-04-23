@@ -3,13 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 52;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		0A203A27245215F800E8F6B0 /* Shout.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A203A1D245215F800E8F6B0 /* Shout.framework */; };
-		0A203A2C245215F800E8F6B0 /* ShoutTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A2B245215F800E8F6B0 /* ShoutTests.swift */; };
 		0A203A2E245215F800E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A203A3A2452176F00E8F6B0 /* XCTestManifests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A372452176F00E8F6B0 /* XCTestManifests.swift */; };
+		0A203A3B2452176F00E8F6B0 /* SSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A382452176F00E8F6B0 /* SSHTests.swift */; };
+		0A203A3C2452176F00E8F6B0 /* SFTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A392452176F00E8F6B0 /* SFTPTests.swift */; };
+		0A203A482452179E00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
+		0A203A492452179E00E8F6B0 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3E2452179E00E8F6B0 /* FileType.swift */; };
+		0A203A4A2452179E00E8F6B0 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
+		0A203A4B2452179E00E8F6B0 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A402452179E00E8F6B0 /* ReadWrite.swift */; };
+		0A203A4C2452179E00E8F6B0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A412452179E00E8F6B0 /* Session.swift */; };
+		0A203A4D2452179E00E8F6B0 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A422452179E00E8F6B0 /* SSH.swift */; };
+		0A203A4E2452179E00E8F6B0 /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A432452179E00E8F6B0 /* Agent.swift */; };
+		0A203A4F2452179E00E8F6B0 /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A442452179E00E8F6B0 /* SFTP.swift */; };
+		0A203A502452179E00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
+		0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
+		0A203A522452179E00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
+		0A203A5624521A6100E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203A5524521A6100E8F6B0 /* Socket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,8 +41,21 @@
 		0A203A20245215F800E8F6B0 /* Shout.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Shout.h; sourceTree = "<group>"; };
 		0A203A21245215F800E8F6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		0A203A26245215F800E8F6B0 /* ShoutTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ShoutTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		0A203A2B245215F800E8F6B0 /* ShoutTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShoutTests.swift; sourceTree = "<group>"; };
 		0A203A2D245215F800E8F6B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A203A372452176F00E8F6B0 /* XCTestManifests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XCTestManifests.swift; sourceTree = "<group>"; };
+		0A203A382452176F00E8F6B0 /* SSHTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHTests.swift; sourceTree = "<group>"; };
+		0A203A392452176F00E8F6B0 /* SFTPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTPTests.swift; sourceTree = "<group>"; };
+		0A203A3D2452179E00E8F6B0 /* SSHError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHError.swift; sourceTree = "<group>"; };
+		0A203A3E2452179E00E8F6B0 /* FileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
+		0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePermissions.swift; sourceTree = "<group>"; };
+		0A203A402452179E00E8F6B0 /* ReadWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWrite.swift; sourceTree = "<group>"; };
+		0A203A412452179E00E8F6B0 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		0A203A422452179E00E8F6B0 /* SSH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSH.swift; sourceTree = "<group>"; };
+		0A203A432452179E00E8F6B0 /* Agent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
+		0A203A442452179E00E8F6B0 /* SFTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTP.swift; sourceTree = "<group>"; };
+		0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHAuthMethod.swift; sourceTree = "<group>"; };
+		0A203A462452179E00E8F6B0 /* FileAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAttributes.swift; sourceTree = "<group>"; };
+		0A203A472452179E00E8F6B0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A203A5624521A6100E8F6B0 /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -71,6 +99,17 @@
 		0A203A1F245215F800E8F6B0 /* Shout */ = {
 			isa = PBXGroup;
 			children = (
+				0A203A432452179E00E8F6B0 /* Agent.swift */,
+				0A203A472452179E00E8F6B0 /* Channel.swift */,
+				0A203A462452179E00E8F6B0 /* FileAttributes.swift */,
+				0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */,
+				0A203A3E2452179E00E8F6B0 /* FileType.swift */,
+				0A203A402452179E00E8F6B0 /* ReadWrite.swift */,
+				0A203A412452179E00E8F6B0 /* Session.swift */,
+				0A203A442452179E00E8F6B0 /* SFTP.swift */,
+				0A203A422452179E00E8F6B0 /* SSH.swift */,
+				0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */,
+				0A203A3D2452179E00E8F6B0 /* SSHError.swift */,
 				0A203A20245215F800E8F6B0 /* Shout.h */,
 				0A203A21245215F800E8F6B0 /* Info.plist */,
 			);
@@ -80,7 +119,9 @@
 		0A203A2A245215F800E8F6B0 /* ShoutTests */ = {
 			isa = PBXGroup;
 			children = (
-				0A203A2B245215F800E8F6B0 /* ShoutTests.swift */,
+				0A203A392452176F00E8F6B0 /* SFTPTests.swift */,
+				0A203A382452176F00E8F6B0 /* SSHTests.swift */,
+				0A203A372452176F00E8F6B0 /* XCTestManifests.swift */,
 				0A203A2D245215F800E8F6B0 /* Info.plist */,
 			);
 			path = ShoutTests;
@@ -114,6 +155,9 @@
 			dependencies = (
 			);
 			name = Shout;
+			packageProductDependencies = (
+				0A203A5524521A6100E8F6B0 /* Socket */,
+			);
 			productName = Shout;
 			productReference = 0A203A1D245215F800E8F6B0 /* Shout.framework */;
 			productType = "com.apple.product-type.framework";
@@ -148,9 +192,11 @@
 				TargetAttributes = {
 					0A203A1C245215F800E8F6B0 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 					0A203A25245215F800E8F6B0 = {
 						CreatedOnToolsVersion = 11.4.1;
+						LastSwiftMigration = 1140;
 					};
 				};
 			};
@@ -163,6 +209,9 @@
 				Base,
 			);
 			mainGroup = 0A203A13245215F800E8F6B0;
+			packageReferences = (
+				0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+			);
 			productRefGroup = 0A203A1E245215F800E8F6B0 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,6 +244,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A203A4E2452179E00E8F6B0 /* Agent.swift in Sources */,
+				0A203A502452179E00E8F6B0 /* SSHAuthMethod.swift in Sources */,
+				0A203A522452179E00E8F6B0 /* Channel.swift in Sources */,
+				0A203A4D2452179E00E8F6B0 /* SSH.swift in Sources */,
+				0A203A4F2452179E00E8F6B0 /* SFTP.swift in Sources */,
+				0A203A4C2452179E00E8F6B0 /* Session.swift in Sources */,
+				0A203A482452179E00E8F6B0 /* SSHError.swift in Sources */,
+				0A203A4B2452179E00E8F6B0 /* ReadWrite.swift in Sources */,
+				0A203A4A2452179E00E8F6B0 /* FilePermissions.swift in Sources */,
+				0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */,
+				0A203A492452179E00E8F6B0 /* FileType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,7 +262,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A203A2C245215F800E8F6B0 /* ShoutTests.swift in Sources */,
+				0A203A3C2452176F00E8F6B0 /* SFTPTests.swift in Sources */,
+				0A203A3B2452176F00E8F6B0 /* SSHTests.swift in Sources */,
+				0A203A3A2452176F00E8F6B0 /* XCTestManifests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -340,9 +402,10 @@
 		0A203A32245215F800E8F6B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -355,7 +418,10 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.ioshack.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -364,9 +430,10 @@
 		0A203A33245215F800E8F6B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				CODE_SIGN_STYLE = Automatic;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_STYLE = Manual;
 				DEFINES_MODULE = YES;
-				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -379,6 +446,8 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.ioshack.Shout;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
 				SKIP_INSTALL = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -388,6 +457,8 @@
 		0A203A35245215F800E8F6B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
 				INFOPLIST_FILE = ShoutTests/Info.plist;
@@ -398,6 +469,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = in.ioshack.ShoutTests;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -406,6 +478,8 @@
 		0A203A36245215F800E8F6B0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 9BEQ8V4XH9;
 				INFOPLIST_FILE = ShoutTests/Info.plist;
@@ -452,6 +526,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/IBM-Swift/BlueSocket";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 1.0.52;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A203A5524521A6100E8F6B0 /* Socket */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			productName = Socket;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A203A14245215F800E8F6B0 /* Project object */;
 }
