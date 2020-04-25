@@ -35,7 +35,7 @@
 		0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A422452179E00E8F6B0 /* SSH.swift */; };
 		0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
 		0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
-		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; };
+		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0A203AF52452212B00E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203AF42452212B00E8F6B0 /* Socket */; };
 /* End PBXBuildFile section */
 
@@ -473,6 +473,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+                SUPPORTS_MACCATALYST = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -532,6 +533,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = "";
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos macosx";
+                SUPPORTS_MACCATALYST = YES;
 				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -563,8 +565,10 @@
 				PRODUCT_NAME = Shout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
@@ -594,8 +598,10 @@
 				PRODUCT_NAME = Shout;
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				"PROVISIONING_PROFILE_SPECIFIER[sdk=macosx*]" = "";
+				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = "iphonesimulator iphoneos";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
