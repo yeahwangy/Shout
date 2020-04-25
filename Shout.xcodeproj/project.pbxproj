@@ -13,18 +13,12 @@
 		0A203A3B2452176F00E8F6B0 /* SSHTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A382452176F00E8F6B0 /* SSHTests.swift */; };
 		0A203A3C2452176F00E8F6B0 /* SFTPTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A392452176F00E8F6B0 /* SFTPTests.swift */; };
 		0A203A482452179E00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
-		0A203A492452179E00E8F6B0 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3E2452179E00E8F6B0 /* FileType.swift */; };
-		0A203A4A2452179E00E8F6B0 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
 		0A203A4B2452179E00E8F6B0 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A402452179E00E8F6B0 /* ReadWrite.swift */; };
 		0A203A4C2452179E00E8F6B0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A412452179E00E8F6B0 /* Session.swift */; };
 		0A203A4D2452179E00E8F6B0 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A422452179E00E8F6B0 /* SSH.swift */; };
 		0A203A502452179E00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
-		0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
 		0A203A522452179E00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
 		0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
-		0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
-		0A203AE824521FCB00E8F6B0 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
-		0A203AE924521FCB00E8F6B0 /* FileType.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3E2452179E00E8F6B0 /* FileType.swift */; };
 		0A203AEA24521FCB00E8F6B0 /* ReadWrite.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A402452179E00E8F6B0 /* ReadWrite.swift */; };
 		0A203AEB24521FCB00E8F6B0 /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A412452179E00E8F6B0 /* Session.swift */; };
 		0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A422452179E00E8F6B0 /* SSH.swift */; };
@@ -33,6 +27,8 @@
 		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		0ABDF95F245461C600AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF95E245461C600AF8B7D /* Socket */; };
 		0ABDF9632454620500AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF9622454620500AF8B7D /* Socket */; };
+		0ABDF9712454942800AF8B7D /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
+		0ABDF9722454942900AF8B7D /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -69,13 +65,11 @@
 		0A203A382452176F00E8F6B0 /* SSHTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHTests.swift; sourceTree = "<group>"; };
 		0A203A392452176F00E8F6B0 /* SFTPTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTPTests.swift; sourceTree = "<group>"; };
 		0A203A3D2452179E00E8F6B0 /* SSHError.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHError.swift; sourceTree = "<group>"; };
-		0A203A3E2452179E00E8F6B0 /* FileType.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileType.swift; sourceTree = "<group>"; };
 		0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilePermissions.swift; sourceTree = "<group>"; };
 		0A203A402452179E00E8F6B0 /* ReadWrite.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReadWrite.swift; sourceTree = "<group>"; };
 		0A203A412452179E00E8F6B0 /* Session.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
 		0A203A422452179E00E8F6B0 /* SSH.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSH.swift; sourceTree = "<group>"; };
 		0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SSHAuthMethod.swift; sourceTree = "<group>"; };
-		0A203A462452179E00E8F6B0 /* FileAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAttributes.swift; sourceTree = "<group>"; };
 		0A203A472452179E00E8F6B0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		0A203ADD24521F6E00E8F6B0 /* Shout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -132,9 +126,7 @@
 			isa = PBXGroup;
 			children = (
 				0A203A472452179E00E8F6B0 /* Channel.swift */,
-				0A203A462452179E00E8F6B0 /* FileAttributes.swift */,
 				0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */,
-				0A203A3E2452179E00E8F6B0 /* FileType.swift */,
 				0A203A402452179E00E8F6B0 /* ReadWrite.swift */,
 				0A203A412452179E00E8F6B0 /* Session.swift */,
 				0A203A422452179E00E8F6B0 /* SSH.swift */,
@@ -346,13 +338,11 @@
 			files = (
 				0A203A502452179E00E8F6B0 /* SSHAuthMethod.swift in Sources */,
 				0A203A522452179E00E8F6B0 /* Channel.swift in Sources */,
+				0ABDF9722454942900AF8B7D /* FilePermissions.swift in Sources */,
 				0A203A4D2452179E00E8F6B0 /* SSH.swift in Sources */,
 				0A203A4C2452179E00E8F6B0 /* Session.swift in Sources */,
 				0A203A482452179E00E8F6B0 /* SSHError.swift in Sources */,
 				0A203A4B2452179E00E8F6B0 /* ReadWrite.swift in Sources */,
-				0A203A4A2452179E00E8F6B0 /* FilePermissions.swift in Sources */,
-				0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */,
-				0A203A492452179E00E8F6B0 /* FileType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,13 +361,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				0A203AEB24521FCB00E8F6B0 /* Session.swift in Sources */,
-				0A203AE824521FCB00E8F6B0 /* FilePermissions.swift in Sources */,
 				0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */,
-				0A203AE924521FCB00E8F6B0 /* FileType.swift in Sources */,
+				0ABDF9712454942800AF8B7D /* FilePermissions.swift in Sources */,
 				0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */,
 				0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */,
 				0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */,
-				0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */,
 				0A203AEA24521FCB00E8F6B0 /* ReadWrite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
