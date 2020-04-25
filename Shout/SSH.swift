@@ -143,9 +143,7 @@ public class SSH {
         while dataLeft {
             switch channel.readData() {
             case .data(let data):
-                let str: String = data.withUnsafeBytes {
-                    return String(cString: $0.bindMemory(to: UInt8.self).baseAddress!)
-                }
+                let str: String = String(data: data, encoding: .utf8) ?? ""
                 output(str)
             case .done:
                 dataLeft = false
