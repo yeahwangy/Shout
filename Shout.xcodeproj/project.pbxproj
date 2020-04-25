@@ -21,7 +21,6 @@
 		0A203A502452179E00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
 		0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
 		0A203A522452179E00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
-		0A203A5624521A6100E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203A5524521A6100E8F6B0 /* Socket */; };
 		0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A472452179E00E8F6B0 /* Channel.swift */; };
 		0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A462452179E00E8F6B0 /* FileAttributes.swift */; };
 		0A203AE824521FCB00E8F6B0 /* FilePermissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */; };
@@ -32,7 +31,8 @@
 		0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
 		0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
 		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		0A203AF52452212B00E8F6B0 /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0A203AF42452212B00E8F6B0 /* Socket */; };
+		0ABDF95F245461C600AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF95E245461C600AF8B7D /* Socket */; };
+		0ABDF9632454620500AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF9622454620500AF8B7D /* Socket */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,7 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A203A5624521A6100E8F6B0 /* Socket in Frameworks */,
+				0ABDF95F245461C600AF8B7D /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -101,7 +101,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				0A203AF52452212B00E8F6B0 /* Socket in Frameworks */,
+				0ABDF9632454620500AF8B7D /* Socket in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -219,7 +219,7 @@
 			);
 			name = "Shout-iOS";
 			packageProductDependencies = (
-				0A203A5524521A6100E8F6B0 /* Socket */,
+				0ABDF95E245461C600AF8B7D /* Socket */,
 			);
 			productName = Shout;
 			productReference = 0A203A1D245215F800E8F6B0 /* Shout.framework */;
@@ -259,7 +259,7 @@
 			);
 			name = "Shout-macOS";
 			packageProductDependencies = (
-				0A203AF42452212B00E8F6B0 /* Socket */,
+				0ABDF9622454620500AF8B7D /* Socket */,
 			);
 			productName = "Shout-macOS";
 			productReference = 0A203ADD24521F6E00E8F6B0 /* Shout.framework */;
@@ -301,7 +301,7 @@
 			);
 			mainGroup = 0A203A13245215F800E8F6B0;
 			packageReferences = (
-				0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */,
+				0ABDF95D245461C500AF8B7D /* XCRemoteSwiftPackageReference "BlueSocket" */,
 			);
 			productRefGroup = 0A203A1E245215F800E8F6B0 /* Products */;
 			projectDirPath = "";
@@ -687,6 +687,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_VERSION = 5.0;
 			};
@@ -715,6 +716,7 @@
 				SDKROOT = macosx;
 				SKIP_INSTALL = YES;
 				SUPPORTED_PLATFORMS = macosx;
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_INCLUDE_PATHS = "$(BUILT_PRODUCTS_DIR)/libssh2";
 				SWIFT_VERSION = 5.0;
 			};
@@ -771,25 +773,25 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
+		0ABDF95D245461C500AF8B7D /* XCRemoteSwiftPackageReference "BlueSocket" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/IBM-Swift/BlueSocket";
+			repositoryURL = "https://github.com/DimaRU/BlueSocket.git";
 			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 1.0.52;
+				branch = master;
+				kind = branch;
 			};
 		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		0A203A5524521A6100E8F6B0 /* Socket */ = {
+		0ABDF95E245461C600AF8B7D /* Socket */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			package = 0ABDF95D245461C500AF8B7D /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
 		};
-		0A203AF42452212B00E8F6B0 /* Socket */ = {
+		0ABDF9622454620500AF8B7D /* Socket */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = 0A203A5424521A6100E8F6B0 /* XCRemoteSwiftPackageReference "BlueSocket" */;
+			package = 0ABDF95D245461C500AF8B7D /* XCRemoteSwiftPackageReference "BlueSocket" */;
 			productName = Socket;
 		};
 /* End XCSwiftPackageProductDependency section */
