@@ -3,11 +3,11 @@
     "pins": [
       {
         "package": "Socket",
-        "repositoryURL": "https://github.com/IBM-Swift/BlueSocket",
+        "repositoryURL": "https://github.com/DimaRU/BlueSocket.git",
         "state": {
-          "branch": null,
-          "revision": "c46a3d41f5b2401d18bcb46d0101cdc5cd13e307",
-          "version": "1.0.52"
+          "branch": "master",
+          "revision": "e7c9d055739b5a72056ce3a38591ed32606b6843",
+          "version": null
         }
       }
     ]
