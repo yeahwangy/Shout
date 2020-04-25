@@ -29,33 +29,6 @@ public struct SSHPassword: SSHAuthMethod {
     
 }
 
-/// Agent-based authentication method
-public struct SSHAgent: SSHAuthMethod {
-    
-    /// Creates a new agent-based authentication
-    public init() {}
-    
-    public func authenticate(ssh: SSH, username: String) throws {
-        let agent = try ssh.session.openAgent()
-        try agent.connect()
-        try agent.listIdentities()
-        
-        var last: Agent.PublicKey? = nil
-        var success: Bool = false
-        while let identity = try agent.getIdentity(last: last) {
-            if agent.authenticate(username: username, key: identity) {
-                success = true
-                break
-            }
-            last = identity
-        }
-        guard success else {
-            throw SSHError.genericError("failed to authenticate using the agent")
-        }
-    }
-    
-}
-
 /// Key-based authentication method
 public struct SSHKey: SSHAuthMethod {
     
@@ -95,12 +68,6 @@ public struct SSHKey: SSHAuthMethod {
                                              privateKey: privateKey,
                                              publicKey: publicKey,
                                              passphrase: nil)
-            return
-        } catch {}
-        
-        // If that doesn't work, try using the Agent in case the passphrase has been saved there
-        do {
-            try SSHAgent().authenticate(ssh: ssh, username: username)
             return
         } catch {}
         

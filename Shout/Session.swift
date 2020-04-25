@@ -15,7 +15,6 @@ class Session {
     private static let initResult = libssh2_init(0)
     
     private let cSession: OpaquePointer
-    private var agent: Agent?
     
     var blocking: Int32 {
         get {
@@ -63,25 +62,12 @@ class Session {
         try SSHError.check(code: code, session: cSession)
     }
     
-    func openSftp() throws -> SFTP  {
-        return try SFTP(cSession: cSession)
-    }
-    
     func openCommandChannel() throws -> Channel {
         return try Channel.createForCommand(cSession: cSession)
     }
 
     func openSCPChannel(fileSize: Int64, remotePath: String, permissions: FilePermissions) throws -> Channel {
         return try Channel.createForSCP(cSession: cSession, fileSize: fileSize, remotePath: remotePath, permissions: permissions)
-    }
-    
-    func openAgent() throws -> Agent {
-        if let agent = agent {
-            return agent
-        }
-        let newAgent = try Agent(cSession: cSession)
-        agent = newAgent
-        return newAgent
     }
     
     deinit {
