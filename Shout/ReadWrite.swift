@@ -19,7 +19,7 @@ enum ReadWriteProcessor {
     
     static func processRead(result: Int, buffer: inout [Int8], session: OpaquePointer) -> ReadResult {
         if result > 0 {
-            let data = buffer.withUnsafeBytes { Data($0) }
+            let data = buffer.withUnsafeBytes { Data(bytes: $0.baseAddress!, count: result) }
             return .data(data)
         } else if result == 0 {
             return .done
