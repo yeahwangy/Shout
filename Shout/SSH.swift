@@ -143,7 +143,7 @@ public class SSH {
         while dataLeft {
             switch channel.readData() {
             case .data(let data):
-                let str: String = String(data: data, encoding: .utf8) ?? ""
+                let str = String(data: data, encoding: .utf8) ?? String(data: data, encoding: .nonLossyASCII) ?? ""
                 output(str)
             case .done:
                 dataLeft = false
