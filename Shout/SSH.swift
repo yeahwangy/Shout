@@ -82,6 +82,14 @@ public class SSH {
         try authenticate(username: username, authMethod: SSHPassword(password))
     }
     
+    /// Authenticate the session using the SSH agent
+    ///
+    /// - Parameter username: the username to login with
+    /// - Throws: SSHError if authentication fails
+    public func authenticateByAgent(username: String) throws {
+        try authenticate(username: username, authMethod: SSHAgent())
+    }
+    
     /// Authenticate the session using the given authentication method
     ///
     /// - Parameters:
@@ -208,6 +216,14 @@ public class SSH {
         try channel.waitClosed()
         
         return channel.exitStatus()
+    }
+    
+    /// Open an SFTP session with the remote server
+    ///
+    /// - Returns: the opened SFTP session
+    /// - Throws: SSHError if an SFTP session could not be opened
+    public func openSftp() throws -> SFTP {
+        return try session.openSftp()
     }
     
 }
