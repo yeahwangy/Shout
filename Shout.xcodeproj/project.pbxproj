@@ -31,6 +31,10 @@
 		0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A452452179E00E8F6B0 /* SSHAuthMethod.swift */; };
 		0A203AEF24521FCB00E8F6B0 /* SSHError.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A203A3D2452179E00E8F6B0 /* SSHError.swift */; };
 		0A203AF024521FCB00E8F6B0 /* Shout.h in Headers */ = {isa = PBXBuildFile; fileRef = 0A203A20245215F800E8F6B0 /* Shout.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		0A306E1D24BB04CB0007514A /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A306E1B24BB04CB0007514A /* SFTP.swift */; };
+		0A306E1E24BB04CB0007514A /* SFTP.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A306E1B24BB04CB0007514A /* SFTP.swift */; };
+		0A306E1F24BB04CB0007514A /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A306E1C24BB04CB0007514A /* Agent.swift */; };
+		0A306E2024BB04CB0007514A /* Agent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A306E1C24BB04CB0007514A /* Agent.swift */; };
 		0ABDF95F245461C600AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF95E245461C600AF8B7D /* Socket */; };
 		0ABDF9632454620500AF8B7D /* Socket in Frameworks */ = {isa = PBXBuildFile; productRef = 0ABDF9622454620500AF8B7D /* Socket */; };
 /* End PBXBuildFile section */
@@ -78,6 +82,8 @@
 		0A203A462452179E00E8F6B0 /* FileAttributes.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FileAttributes.swift; sourceTree = "<group>"; };
 		0A203A472452179E00E8F6B0 /* Channel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Channel.swift; sourceTree = "<group>"; };
 		0A203ADD24521F6E00E8F6B0 /* Shout.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Shout.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A306E1B24BB04CB0007514A /* SFTP.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SFTP.swift; sourceTree = "<group>"; };
+		0A306E1C24BB04CB0007514A /* Agent.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Agent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,6 +137,8 @@
 		0A203A1F245215F800E8F6B0 /* Shout */ = {
 			isa = PBXGroup;
 			children = (
+				0A306E1C24BB04CB0007514A /* Agent.swift */,
+				0A306E1B24BB04CB0007514A /* SFTP.swift */,
 				0A203A472452179E00E8F6B0 /* Channel.swift */,
 				0A203A462452179E00E8F6B0 /* FileAttributes.swift */,
 				0A203A3F2452179E00E8F6B0 /* FilePermissions.swift */,
@@ -350,8 +358,10 @@
 				0A203A4C2452179E00E8F6B0 /* Session.swift in Sources */,
 				0A203A482452179E00E8F6B0 /* SSHError.swift in Sources */,
 				0A203A4B2452179E00E8F6B0 /* ReadWrite.swift in Sources */,
+				0A306E1D24BB04CB0007514A /* SFTP.swift in Sources */,
 				0A203A4A2452179E00E8F6B0 /* FilePermissions.swift in Sources */,
 				0A203A512452179E00E8F6B0 /* FileAttributes.swift in Sources */,
+				0A306E1F24BB04CB0007514A /* Agent.swift in Sources */,
 				0A203A492452179E00E8F6B0 /* FileType.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,8 +386,10 @@
 				0A203AE924521FCB00E8F6B0 /* FileType.swift in Sources */,
 				0A203AEE24521FCB00E8F6B0 /* SSHAuthMethod.swift in Sources */,
 				0A203AE624521FCB00E8F6B0 /* Channel.swift in Sources */,
+				0A306E1E24BB04CB0007514A /* SFTP.swift in Sources */,
 				0A203AED24521FCB00E8F6B0 /* SSH.swift in Sources */,
 				0A203AE724521FCB00E8F6B0 /* FileAttributes.swift in Sources */,
+				0A306E2024BB04CB0007514A /* Agent.swift in Sources */,
 				0A203AEA24521FCB00E8F6B0 /* ReadWrite.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
