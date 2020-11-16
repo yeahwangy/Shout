@@ -19,7 +19,7 @@ extension ShoutTests {
     ]
 }
 
-#if !os(macOS)
+#if os(Linux)
 public func __allTests() -> [XCTestCaseEntry] {
     return [
         testCase(SFTPTests.__allTests),
