@@ -13,6 +13,18 @@ try ssh.execute("ls -a")
 try ssh.execute("pwd")
 ...
 ```
+## Special  supported numeric host & external prebuild Libssh2.
+Supported platforms and architectures:
+| Platform          |  Architectures     |
+|-------------------|--------------------|
+| macOS             | x86_64 arm64       |
+| iOS               | arm64 armv7 armv7s |
+| iOS Simulator     | x86_64 arm64       |
+| watchOS           | armv7k arm64_32    |
+| watchOS Simulator | x86_64 arm64       |
+| tvOS              | arm64              |
+| tvOS Simulator    | x86_64 arm64       |
+| Mac Catalyst       | x86_64 arm64       |
 
 ## Installation
 ### [Ice Package Manager](https://github.com/jakeheis/Ice)
