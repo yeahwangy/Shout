@@ -29,8 +29,12 @@ public class SSH {
     ///   - authMethod: the authentication method to use while logging in
     ///   - execution: the block executed with the open, authenticated SSH session
     /// - Throws: SSHError if the session fails at any point
-    public static func connect(host: String, port: Int32 = 22, username: String, authMethod: SSHAuthMethod, execution: (_ ssh: SSH) throws -> ()) throws {
-        let ssh = try SSH(host: host, port: port)
+    public static func connect(host: String, port: Int32 = 22,
+                               username: String,
+                               authMethod: SSHAuthMethod,
+                               numericHost: Bool = false,
+                               execution: (_ ssh: SSH) throws -> ()) throws {
+        let ssh = try SSH(host: host, port: port, numericHost: numericHost)
         try ssh.authenticate(username: username, authMethod: authMethod)
         try execution(ssh)
     }
@@ -46,12 +50,12 @@ public class SSH {
     ///   - host: the host to connect to
     ///   - port: the port to connect to; default 22
     /// - Throws: SSHError if the SSH session couldn't be created
-    public init(host: String, port: Int32 = 22) throws {
+    public init(host: String, port: Int32 = 22, numericHost: Bool) throws {
         self.sock = try Socket.create()
         self.session = try Session()
         
         session.blocking = 1
-        try sock.connect(to: host, port: port)
+        try sock.connect(to: host, port: port, numericHost: numericHost)
         try session.handshake(over: sock)
     }
     
