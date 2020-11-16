@@ -50,7 +50,7 @@ public class SSH {
     ///   - host: the host to connect to
     ///   - port: the port to connect to; default 22
     /// - Throws: SSHError if the SSH session couldn't be created
-    public init(host: String, port: Int32 = 22, numericHost: Bool) throws {
+    public init(host: String, port: Int32 = 22, numericHost: Bool = false) throws {
         self.sock = try Socket.create()
         self.session = try Session()
         
