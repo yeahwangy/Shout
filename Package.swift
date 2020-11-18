@@ -9,7 +9,7 @@ let package = Package(
     ],
     dependencies: [
         .package(name: "Socket", url: "https://github.com/DimaRU/BlueSocket.git", .branch("master")),
-        .package(name: "CSSH", url: "https://github.com/DimaRU/Libssh2Prebuild.git", .exact("1.9.0-OpenSSL_1_1_1h"))
+        .package(name: "CSSH", url: "https://github.com/DimaRU/Libssh2Prebuild.git", .exact("1.9.0+OpenSSL_1_1_1h"))
     ],
     targets: [
         .target(name: "Shout", dependencies: ["CSSH", "Socket"]),
